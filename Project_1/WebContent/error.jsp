@@ -58,9 +58,9 @@
         <h1 class="error-code">404</h1>
         <p class="error-message">Page Not Found</p>
         <p class="error-description">Oops! The page you're looking for doesn't exist. It might have been moved or deleted.</p>
-        <img src="https://example.com/food-image.jpg" alt="Delicious food" width="300">
+        <img src="https://images.pexels.com/photos/1860208/pexels-photo-1860208.jpeg?cs=srgb&dl=cooked-food-1860208.jpg&fm=jpg" alt="Delicious food" width="300">
         <div class="links">
-            <a href="jsps/FoodieDelights.jsp">Go to Homepage</a>
+            <a href="/Project_1">Go to Homepage</a>
             <a href="#">View Our Menu</a>
             <a href="#">Contact Support</a>
         </div>

@@ -19,6 +19,7 @@
 		<li><i class="material-icons">arrow_forward_ios</i><a href="html/login.html">login.html</a></li>
 		<li><i class="material-icons">arrow_forward_ios</i><a href="jsps/ScriptingElements.jsp">Scripting Elements</a></li>
 		<li><i class="material-icons">arrow_forward_ios</i><a href="jsps/FoodieDelights.jsp">FoodieDelights</a></li>
+		<li><i class="material-icons">arrow_forward_ios</i><a href="jsps/ActionElements.jsp">ActionElements</a></li>
 	</ul>
 </body>
 </html>

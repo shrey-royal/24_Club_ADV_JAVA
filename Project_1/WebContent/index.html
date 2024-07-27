@@ -5,11 +5,12 @@
 <title>JSPages</title>
 </head>
 <body>
-	<ul type="disc">
-		<li><a href="index.jsp">index.jsp</a></li>
-		<li><a href="html/login.html">login.html</a></li>
-		<li><a href="jsps/ScriptingElements.jsp">Scripting Elements</a></li>
-		<li><a href="jsps/FoodieDelights.jsp">FoodieDelights</a></li>
-	</ul>
+	<form action="jsps/process.jsp" method="post">
+		Name: <input type='text' name='n'><br>
+		Email: <input type='email' name='e'><br>
+		Password: <input type='password' name='p'><br>
+		
+		<input type='submit' value='Submit' />
+	</form>
 </body>
 </html>

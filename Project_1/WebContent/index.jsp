@@ -20,6 +20,7 @@
 		<li><i class="material-icons">arrow_forward_ios</i><a href="jsps/ScriptingElements.jsp">Scripting Elements</a></li>
 		<li><i class="material-icons">arrow_forward_ios</i><a href="jsps/FoodieDelights.jsp">FoodieDelights</a></li>
 		<li><i class="material-icons">arrow_forward_ios</i><a href="jsps/ActionElements.jsp">ActionElements</a></li>
+		<li><i class="material-icons">arrow_forward_ios</i><a href="jsps/process.jsp">useBean</a></li>
 	</ul>
 </body>
 </html>

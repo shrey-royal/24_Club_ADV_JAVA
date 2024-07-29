@@ -1,0 +1,23 @@
+Problem Statement: Event Management System
+
+-> Key Features of the Event Management System:
+1. Create an Event
+2. Register for an Event
+3. View Events
+4. Manage Registrations
+
+-> Components and Approach:
+
+1. Data Storage:
+   - Use in-memory data structures (e.g., 'ArrayList') to store events and registrations.
+   - Optionally, use files (e.g., text or JSON files) for persistent storage between server restarts.
+
+2. Servlets:
+   - EventCreationServlet: Handles the creation of new events.
+   - EventRegistrationServlet: Manages user registration for events.
+   - EventListServlet: Displays a list of available events.
+   - RegistrationListServlet: Shows a list of registrations for a specific event.
+
+3. Data Structures:
+   - Event: A class representing an event with properties like ID, name, date, and description.
+   - Registration: A class representing a registration with properties like event ID and user details.

@@ -21,6 +21,8 @@
 		<li><i class="material-icons">arrow_forward_ios</i><a href="jsps/FoodieDelights.jsp">FoodieDelights</a></li>
 		<li><i class="material-icons">arrow_forward_ios</i><a href="jsps/ActionElements.jsp">ActionElements</a></li>
 		<li><i class="material-icons">arrow_forward_ios</i><a href="jsps/process.jsp">useBean</a></li>
+		<li><i class="material-icons">arrow_forward_ios</i><a href="jsps/el.jsp">Expression Language</a></li>
+		<li><i class="material-icons">arrow_forward_ios</i><a href="jsps/jstl.jsp">JSTL</a></li>
 	</ul>
 </body>
 </html>

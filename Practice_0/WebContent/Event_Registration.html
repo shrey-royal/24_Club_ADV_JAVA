@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Event</title>
+</head>
+<body>
+    <h1>Create a New Event</h1>
+    <form action="createEvent" method="post">
+        <label for="id">Event ID:</label>
+        <input type="text" id="id" name="id" required><br>
+        
+        <label for="name">Event Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        
+        <label for="date">Date:</label>
+        <input type="text" id="date" name="date" required><br>
+        
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" required></textarea><br>
+        
+        <input type="submit" value="Create Event">
+    </form>
+    <a href="eventList">Back to Event List</a>
+</body>
+</html>

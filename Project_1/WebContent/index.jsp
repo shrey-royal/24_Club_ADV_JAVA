@@ -23,6 +23,7 @@
 		<li><i class="material-icons">arrow_forward_ios</i><a href="jsps/process.jsp">useBean</a></li>
 		<li><i class="material-icons">arrow_forward_ios</i><a href="jsps/el.jsp">Expression Language</a></li>
 		<li><i class="material-icons">arrow_forward_ios</i><a href="jsps/jstl.jsp">JSTL</a></li>
+		<li><i class="material-icons">arrow_forward_ios</i><a href="jsps/customTags.jsp">Custom tags</a></li>
 	</ul>
 </body>
 </html>

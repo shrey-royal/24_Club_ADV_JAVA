@@ -12,5 +12,12 @@
 	<c:if test="${ 1>0 }">
 		<c:out value="I'm in IF"/>
 	</c:if>
+	
+	<c:forEach var="i" begin="0" end="20">
+		Item <c:out value="${i}"/>
+		<c:if test="${ i%5 == 0 }">
+			<br>
+		</c:if>
+	</c:forEach>
 </body>
 </html>

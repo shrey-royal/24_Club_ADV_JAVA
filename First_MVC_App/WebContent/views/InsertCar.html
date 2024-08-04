@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add New Car</title>
+<style type="text/css">
+	.center-form  {
+		justify-content: center;
+		display: flex;
+		margin: auto;
+		margin-top: 50px;
+		border: 3px solid blue;
+		padding: 30px;
+		background-color: rgb(208, 205, 248);
+		width: 50%;
+	}
+</style>
+</head>
+<body>
+	<center>
+		<h1>Car Showroom</h1>
+		<h2>
+			<a href="InsertCar.html">InsertCar</a>
+			&nbsp;&nbsp;&nbsp;
+			<a href="listall">List All Cars</a>
+		</h2>
+	</center>
+	
+	<h1 align="center">Add New Car</h1>
+	<div class="center-form">
+		<form action="add" method="post">
+			<label for="make">Make: </label>
+			<input type="text" name="make" placeholder="enter company name">
+			<br><br>
+			<label for="model">Model: </label>
+			<input type="text" name="model" placeholder="enter car model">
+			<br><br>
+			<label for="year">Year: </label>
+			<input type="number" name="year" placeholder="enter year of manufacturing">
+			<br><br>
+			<label for="price">Price: </label>
+			<input type="number" name="price" placeholder="enter car price">
+			<br><br>
+			<input type="submit" value="Add Car">
+		</form>
+	</div>
+</body>
+</html>

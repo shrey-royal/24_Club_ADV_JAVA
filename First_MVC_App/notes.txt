@@ -1,0 +1,11 @@
+Car sowroom
+
+Create Table Query:
+
+CREATE TABLE Cars (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    make VARCHAR(50),
+    model VARCHAR(50),
+    year INT,
+    price DECIMAL(10, 2)
+);

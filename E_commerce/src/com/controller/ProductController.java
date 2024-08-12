@@ -2,6 +2,7 @@ package com.controller;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
@@ -24,7 +25,11 @@ public class ProductController extends HttpServlet {
 		String action = req.getParameter("action");
 		
 		try {
-			//
+			if ("list".equals(action)) {
+				List<ProductBean> products = productDao.getAllProducts();
+				req.setAttribute("products", products);
+				req.getRequestDispatcher("/views/listAllProducts.jsp").forward(req, res);
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
 			res.sendRedirect("/views/error.jsp");
@@ -52,7 +57,7 @@ public class ProductController extends HttpServlet {
 					product.setImageName(imageName);
 				}
 				productDao.addProduct(product);
-				res.sendRedirect("products/?actions=list");
+				res.sendRedirect("products?action=list");
 				
 			} else {
 				res.sendRedirect("error.jsp");

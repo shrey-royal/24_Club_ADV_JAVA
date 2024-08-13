@@ -29,6 +29,11 @@ public class ProductController extends HttpServlet {
 				List<ProductBean> products = productDao.getAllProducts();
 				req.setAttribute("products", products);
 				req.getRequestDispatcher("/views/listAllProducts.jsp").forward(req, res);
+			} else if ("view".equals(action)) {
+				int productId = Integer.parseInt(req.getParameter("id"));
+				ProductBean productBean = productDao.getProductById(productId);
+				req.setAttribute("product", productBean);
+				req.getRequestDispatcher("/views/viewProduct.jsp").forward(req, res);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

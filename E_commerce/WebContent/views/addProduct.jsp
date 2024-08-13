@@ -90,7 +90,7 @@
 <body>
     <div class="container">
         <h1>Add New Product</h1>
-        <form action="products" method="post" enctype="multipart/form-data">
+        <form action="/E_commerce/products" method="post" enctype="multipart/form-data">
             <input type="hidden" name="action" value="add" />
             <label for="product_name">Name:</label>
             <input type="text" id="product_name" name="product_name" required /><br />

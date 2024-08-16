@@ -24,7 +24,7 @@
     <div class="container mt-5">
         <a href="views/addProduct.jsp" class="btn btn-primary mb-3">Add New Product</a>
         <h1 class="text-center mb-4">Product List</h1>
-        <table id="productTable" class="table table-striped table-bordered">
+        <table id="productTable" class="text-center table table-striped table-bordered">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -32,7 +32,7 @@
                     <th>Description</th>
                     <th>Price</th>
                     <th>Image</th>
-                    <th>Actions</th>
+                    <th class="text-center">Actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -45,10 +45,10 @@
                         <td>
                             <img src="image?id=${product.productId}" alt="Product Image" style="width: 100px; height: auto;" />
                         </td>
-                        <td>
-                            <a href="products?action=view&id=${product.productId}" class="btn btn-info btn-sm">View</a>
-                            <a href="editProduct.jsp?id=${product.productId}" class="btn btn-warning btn-sm">Edit</a>
-                            <a href="products?action=delete&product_id=${product.productId}" class="btn btn-danger btn-sm">Delete</a>
+                        <td class="d-flex justify-content-around text-center">
+                            <a href="products?action=view&id=${product.productId}" class="ml-1 btn btn-info btn-sm">View</a>
+                            <a href="views/editProduct.jsp?id=${product.productId}" class="ml-1 btn btn-warning btn-sm">Edit</a>
+                            <a href="products?action=delete&product_id=${product.productId}" class="ml-1 btn btn-danger btn-sm">Delete</a>
                         </td>
                     </tr>
                 </c:forEach>

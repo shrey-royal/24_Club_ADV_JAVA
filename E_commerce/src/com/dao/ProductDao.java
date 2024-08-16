@@ -86,7 +86,14 @@ public class ProductDao {
 	}
 	
 	public void updateProduct(ProductBean product) {
-		String query = "UPDATE products SET product_name = ?, product_description = ?, product_price = ?, image_data = ?, image_name = ? WHERE product_id = ?";
+		String query = null;
+		
+		if (product.getImageData() != null) {
+			query = "UPDATE products SET product_name = ?, product_description = ?, product_price = ?, image_data = ?, image_name = ? WHERE product_id = ?";
+		} else {
+			query = "UPDATE products SET product_name = ?, product_description = ?, product_price = ? WHERE product_id = ?";
+		}
+		
 		try {
 			Connection conn = DBConnection.getConnection();
 			PreparedStatement ps = conn.prepareStatement(query);
@@ -94,9 +101,14 @@ public class ProductDao {
 			ps.setString(1, product.getProductName());
 			ps.setString(2, product.getProductDescription());
 			ps.setDouble(3, product.getProductPrice());
-			ps.setBytes(4, product.getImageData());
-			ps.setString(5, product.getImageName());
-			ps.setInt(6, product.getProductId());
+			
+			if (product.getImageData() != null) {
+				ps.setBytes(4, product.getImageData());
+				ps.setString(5, product.getImageName());
+				ps.setInt(6, product.getProductId());
+			} else {
+				ps.setInt(4, product.getProductId());
+			}
 			
 			if(ps.executeUpdate() == 1) {
 				System.out.println("Product updated successfully!");

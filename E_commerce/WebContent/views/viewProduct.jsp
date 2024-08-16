@@ -25,7 +25,7 @@
             box-sizing: border-box;
         }
         .product-image {
-            max-width: 100%;
+            max-width: 50%;
             height: auto;
             flex: 1;
         }

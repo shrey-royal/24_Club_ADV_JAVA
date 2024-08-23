@@ -1,0 +1,9 @@
+CREATE TABLE products (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100),
+    price DECIMAL(10, 2)
+);
+
+INSERT INTO products (name, price) VALUES ('Latte', 4.50);
+INSERT INTO products (name, price) VALUES ('Espresso', 3.00);
+INSERT INTO products (name, price) VALUES ('Cappuccino', 5.00);
